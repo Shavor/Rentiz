@@ -6,6 +6,7 @@
   top: 30%;
   width: 100%;
 }
+
 @media (max-width: 1750px) {
   .slider__btn {
     top: -10rem;
@@ -14,11 +15,13 @@
     gap: 5rem;
   }
 }
+
 @media (max-width: 668px) {
   .slider__btn {
     display: none;
   }
 }
+
 @media (max-width: 376px) {
   .slider__btn {
     display: none;
@@ -41,13 +44,15 @@
   height: 7.8rem;
   border-radius: 50%;
   border: 1px solid #A9ADB1;
-  background: url("/images/Slider/arow-slider.svg") center center no-repeat;
+  background: url("./images/Slider/arow-slider.svg") center center no-repeat;
   transition: border 0.2s linear;
   cursor: pointer;
 }
+
 .popular__slider-btn:hover {
   border: 1px solid #b10525;
 }
+
 @media (max-width: 1750px) {
   .popular__slider-btn {
     position: static;
