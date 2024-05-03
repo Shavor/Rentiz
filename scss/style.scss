@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+* img {
+    max-width: 100%;
+}
+
+:root {
+    --bg-color: #121B25;
+    --accent-color: #0dd314;
+    --text-color: #d6d6d6;
+    --text-white: #ffff;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "work sans", sans-serif;
+    background-color: var(--bg-color);
+
+    color: #ffff;
+
+    &.no__scroll    {
+        overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+        &.show-sidebar {
+            overflow: hidden;
+        }
+    }
+}
+
+.container {
+    max-width: 145rem; 
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.title {
+    font-size: 4.8rem;
+    color: var(--text-white);
+    font-weight: 600;
+    text-transform: capitalize;
+
+    &--mobile {
+
+        @media (max-width: 376px) {
+            font-size: 2.8rem;
+        }
+    }
+}
+
+.text { 
+    font-size: 1.8rem; 
+    line-height: 1.8rem;
+    color: var(--text-color);
+    text-decoration: none;
+
+    &--footer {
+        @media (max-width: 568px) {
+            text-align: center;
+        }
+    }
+}
+
+.link {
+    text-align: center;
+
+    &--gallery {
+        text-align: left;
+
+        @media (max-width: 376px) {
+            text-align: center;
+        }
+    }
+
+    a {
+        display: inline-block;
+        padding: 2.2rem 4.2rem;
+    
+        background: var(--accent-color);
+        border-radius: 2.5rem;
+
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: var(--text-white);
+        text-decoration: none;
+        text-transform: capitalize;
+    
+        transition: background-color .2s linear;
+    
+        &:hover {
+            background-color: var(--accent-color);
+        }
+    }
+}
+
+
+@import './bloks/page';
+@import './bloks/header';
+@import './bloks/nav';
+@import './bloks/btn';
+@import './bloks/burger';
+@import './bloks/text'; 
+@import './bloks/hero';
+@import './bloks/filter';
+@import './bloks/search';
+@import './bloks/featured';
+@import './bloks/popular';
+@import './bloks/slider-btn';
+@import './bloks/why';
+@import './bloks/reviews';
+@import './bloks/reviews-slide';
+@import './bloks/gallery';
+@import './bloks/begin';
+@import './bloks/footer';

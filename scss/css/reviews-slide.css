@@ -1,0 +1,26 @@
+.slider-reviews__buttons {
+  height: 6rem;
+  align-items: center;
+  display: flex;
+  gap: 7rem;
+  width: 11.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 1.5rem;
+}
+.slider-reviews__buttons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  background: #353F49;
+  width: 1px;
+}
+
+.slider__reviews-btn svg {
+  fill: #fff;
+}
+.slider__reviews-btn.swiper-button-disabled svg {
+  fill: #767F89;
+}

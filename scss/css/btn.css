@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 10rem;
+  height: 4.1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1.1rem 2.9rem;
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+  background: inherit;
+  transition: background 0.2s ease-in-out;
+}
+@media (max-width: 576px) {
+  .btn {
+    padding: 0.8rem 2.5rem;
+  }
+}
+.btn.registr {
+  background-color: var(--accent-color);
+  padding: 1.1rem 2rem;
+}
+.btn.registr:hover {
+  background: transparent;
+}
+@media (max-width: 320px) {
+  .btn.registr {
+    display: none;
+  }
+}
+.btn.login:hover {
+  background: var(--accent-color);
+}
+@media (max-width: 450px) {
+  .btn.login {
+    display: none;
+  }
+}

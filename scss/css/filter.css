@@ -1,0 +1,112 @@
+.filter {
+  margin-right: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 164px;
+  color: #121B25;
+}
+.filter__block:nth-child(2) {
+  border-left: 1px solid #E8E8E8;
+  border-right: 1px solid #E8E8E8;
+}
+@media (max-width: 576px) {
+  .filter {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5rem;
+    height: auto;
+  }
+}
+@media (max-width: 475px) {
+  .filter {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.block__filter {
+  position: relative;
+}
+
+.block__filter-button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 4rem;
+}
+@media (max-width: 376px) {
+  .block__filter-button {
+    padding-left: 1rem;
+  }
+}
+
+.block__filter-header {
+  display: flex;
+  align-items: center;
+}
+
+.block__filter-type {
+  font-size: 1.6rem;
+  color: #858585;
+  margin-bottom: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.block__filter-icon {
+  width: 1rem;
+  height: 0.7rem;
+  background: url("/images/icons/arow.svg") center bottom no-repeat;
+  transition: transform 0.2s linear;
+}
+.block__filter-icon.active {
+  transform: rotate(180deg);
+}
+
+.block__filter-value {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #121B25;
+}
+
+.block__filter-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 3px 2px rgba(0, 0, 0, 0.2588235294);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  z-index: 3;
+}
+.block__filter-dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translateY(10px);
+}
+
+.block__filter-item {
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: background-color 0.2s linear;
+}
+.block__filter-item:hover {
+  background-color: #adadad;
+}
+
+.filter__btn {
+  padding: 0.5rem;
+}
+@media (max-width: 576px) and (min-width: 475px) {
+  .filter__btn {
+    grid-column: 1/4;
+  }
+}

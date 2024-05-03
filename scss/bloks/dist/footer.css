@@ -1,0 +1,141 @@
+.footer {
+  background-color: #1A242F;
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: 34rem repeat(2, 1fr 1fr);
+  gap: 12rem;
+  padding: 14rem 0 9.4rem;
+}
+@media (max-width: 1024px) {
+  .footer__main {
+    display: flex;
+    gap: 6rem;
+    padding: 5rem 0 4.4rem;
+  }
+}
+@media (max-width: 992px) {
+  .footer__main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .footer__main {
+    display: flex;
+    gap: 3rem;
+    padding: 5rem 0 4.4rem;
+  }
+}
+@media (max-width: 668px) {
+  .footer__main {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+@media (max-width: 376px) {
+  .footer__main {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 668px) {
+  .footer__block.main {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+
+.footer__text {
+  margin: 2.2rem 0 3.2rem;
+}
+@media (max-width: 992px) {
+  .footer__text {
+    max-width: 34rem;
+  }
+}
+@media (max-width: 668px) {
+  .footer__text {
+    max-width: 100%;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+@media (max-width: 668px) {
+  .footer__socials {
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+}
+
+.footer__social {
+  text-decoration: none;
+}
+.footer__social svg {
+  fill: #555E68;
+  transition: fill 0.2s linear;
+}
+.footer__social svg:hover {
+  fill: #fff;
+}
+
+.link-footer {
+  width: 25%;
+  text-align: center;
+}
+
+.link-footer__header {
+  margin-bottom: 1.3rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.links-footer__item {
+  margin-bottom: 1.8rem;
+}
+@media (max-width: 376px) {
+  .links-footer__item {
+    margin-bottom: 0;
+  }
+}
+
+.links-footer__link {
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s linear;
+}
+.links-footer__link:hover {
+  color: #fff;
+}
+
+.footer__copyright {
+  padding: 1.6rem 0;
+  border-top: 1px solid #303A44;
+}
+
+.footer__copyright-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 320px) {
+  .footer__copyright-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 376px) {
+  .footer__copyright-container span {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+}

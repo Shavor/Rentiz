@@ -1,0 +1,6 @@
+.text {
+  Font-style: Regular;
+  Font-size: 1.8rem;
+  Line-height: 31px;
+  color: var(--text-color);
+}

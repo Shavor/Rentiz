@@ -1,0 +1,59 @@
+// main: ../style.less
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4rem auto 9.5rem;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 4.5rem;
+    }
+
+    @media (max-width: 995px) {
+        margin: 4rem auto 4rem;
+    }
+
+    @media (max-width: 376px) {
+        margin: 1rem auto 1rem;
+    }
+}
+
+.header__logo {
+    min-width: 12rem;
+
+    &.nav {
+        margin-top: 5rem;
+
+        @media (min-width: 1020px) {
+            display: none;
+        }
+
+        @media (max-width: 320px) {
+            margin: 2rem 0;
+        }
+    }
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    z-index: 3;
+}
+
+.header__button {
+    margin-left: 7.4rem;
+    justify-content: flex-end;
+
+    @media (max-width: 1020px) {
+        margin-left: 0;
+        margin-right: 3rem;
+    }
+
+    @media (max-width: 376px) {
+       display: none;
+    }
+}
+
